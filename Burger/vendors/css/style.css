@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hotpink;
+    height: 80px;
+    align-items: center;
+    padding: 0px 15px;
+    width: 100%;
+}
+
+.headerimg {
+    margin-right: 990px;
+}
+
+.header .icon i{
+
+    display: none;
+}
+
+.headerlink a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#banner {
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/21/11/17/burger-4953465_960_720.jpg);
+    height: 400px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-box {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    color: rgb(1, 225, 255);
+    margin-top: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imgResDiv {
+    flex: 25%;
+}
+
+.imgDiv {
+    border: 1px dashed black;
+    width: 200px;
+    border-radius: 30px;
+    /* margin-top: 30px; */
+    /* margin-right: 30px; */
+    margin: 20px;
+}
+
+.imgDiv .pricePurchaseDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    
+}
+
+.imgDiv .price {
+    font-size: 28px;
+    color: red;
+    
+}
+
+.imgDiv .purchase {
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: white;
+    width: 100px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.imgDiv img {
+    width: 100%;
+    border-radius: 30px 30px 0 0 ;
+    
+}
+
+.imgDiv h2 {
+    text-align: center;
+    color: red;
+}
+
+.imgDiv p {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.footer{
+    background-color:lightcoral;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+
+.footerlist {
+    list-style: none;
+}
+
+.footerlist a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.footerlist li {
+    margin-top: 10px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:900px) {
+.imgResDiv {
+    flex: 50%;
+}
+
+#banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.headerimg {
+    display: none;
+}
+
+.header .icon i {
+    display: block;
+}
+
+.header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header .headerlink{
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
+
+@media screen and (max-width:600px) {
+    .headerimg {
+        display: none;
+    }
+
+    .header .icon i {
+        display: block;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header .headerlink{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    .banner-box {
+        margin-top: 30px;
+    }
+
+    .mobilelinkdisplay{
+        display: none;
+    }
+
+    .cart {
+        flex-direction: column;
+    }
+    
+    .imgDiv {
+        /* width: 100%; */
+        margin-bottom: 30px;
+    }
+
+    .imgResDiv {
+        flex: 100%;
+    }
+
+  
+    
+    .footer {
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footerlist {
+        display: flex;
+        padding: 0;
+    }
+
+    .footerlist li {
+        margin-right: 10px;
+        margin: 15px;
+    }
+}
